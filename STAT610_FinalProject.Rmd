@@ -42,6 +42,9 @@ library(pipeR)
 library(V8)
 set.seed(123)
 ```
+
+[Github link](https://github.com/JiongRanWang/Project.git)
+
 # Data
 
 We used the first book from the howework 1. first of all, we substracted the contents from the book and then split into single words, which looks like: 
@@ -49,7 +52,7 @@ We used the first book from the howework 1. first of all, we substracted the con
 ## read data 
 ## one book from the books used in homework 1
 #dat = read_file("/Users/yuanyuanluan/Box/Fall2019/Statitical_Computing/HomeWork/HW1/data/books/books/98-0.txt")
-dat = read_file("books/98-0.txt")
+dat = read_file("98-0.txt")
 
 ## Only use the contents of the book, which excludes things like introducntion part of the book. 
 contents = regmatches(dat,gregexpr("(I. The Period).+",dat))[[1]]
